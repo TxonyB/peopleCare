@@ -348,7 +348,6 @@ body.menu-expanded button path {
 #services {
   background-color: #FFF9DE;
   padding-block: 6rem;
-  padding-inline: 12rem;
   text-align: center;
 
   display: flex;
@@ -490,7 +489,7 @@ body.menu-expanded button path {
 footer {
   background-color: #FFF9DE;
 
-  padding-inline: 12rem;
+  
 
   display: flex;
   flex-direction: column;
@@ -581,6 +580,7 @@ footer li {
 }
 
 /*=== RESPONSIVO =================================*/
+/* Estilos para dispositivos móveis */
 
 
 @media (min-width: 1024px) {
