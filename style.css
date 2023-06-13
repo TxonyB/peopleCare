@@ -7,7 +7,7 @@
 
 :root {
   --hue: 190;
-  --primary-color: hsl(var(--hue), 100%, 26%);
+  --primary-color: #68752C;
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
 
@@ -193,6 +193,9 @@ nav .close-menu {
   position: fixed;
 }
 
+.nomes {
+  color: #68752C;
+}
 /*=== MENU-EXPANDED =================================*/
 body.menu-expanded {
   overflow: hidden;
@@ -299,7 +302,7 @@ body.menu-expanded button path {
   content: '';
   width: 100%;
   height: calc(76% + var(--nav-height));
-  background-color: var(--brand-light);
+  background-color: #CDD071;
   display: block;
 
   position: absolute;
@@ -311,7 +314,14 @@ body.menu-expanded button path {
 #home .button {
   margin-inline: auto;
 }
+#home #title {
+  font-size: 4.8rem;
+  line-height: 130%;
+  font-weight: 700;
+  color: #FFF9DE;
 
+  margin-bottom: 1.6rem;
+}
 #home p {
   font-size: 1.8rem;
   line-height: 150%;
@@ -328,132 +338,227 @@ body.menu-expanded button path {
   object-position: 0 2rem;
 }
 
-#home .stats {
-  width: 100%;
-  padding-block: 4rem;
-  margin-inline: auto;
 
-  background-color: var(--brand-beige);
-  border: 1px solid var(--brand-light);
-  border-radius: 0.6rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6rem;
-}
-
-#home .stat h3 {
-  font-size: 4.8rem;
-  color: var(--headline);
-  line-height: 130%;
-
-  margin-bottom: 0.4rem;
-}
-
-#home .stat p {
-  margin: 0;
-  color: var(--primary-color);
-  font-size: 1.6rem;
-  line-height: 150%;
-}
 
 /*=== SERVICES =================================*/
 #services header h2 {
   margin-bottom: 6rem;
 }
 
+#services {
+  background-color: #FFF9DE;
+  padding-block: 6rem;
+  padding-inline: 12rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
+
+  overflow: hidden;
+
+  margin-top: -6rem;
+  margin-bottom: 6rem;
+}
 #services .cards {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
+#services #wineTitle {
+  color: #632739;
+}
 #services .card {
   padding: 2.4rem;
-  text-align: left;
+  text-align: center;
 
   background: white;
 
-  border: 1px solid var(--brand-light);
+  border: 2px solid #632739;
   border-radius: 0.6rem;
 }
 
 #services .card h3 {
   margin-block: 1.6rem;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  font-weight: 700;
+  color: #632739;
+
+  margin-bottom: 1.6rem;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.6rem;
+
+  padding-bottom: 1.6rem;
+
+  border-bottom: 2px solid #632739;
+
+  transition: color 300ms;
 }
 
+#services .card p {
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 700;
+  color: var(--paragraph);
+
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+
+  transition: color 300ms;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.6rem;
+
+  padding-bottom: 1.6rem;
+  padding-top: 1.6rem;
+}
 /*=== ABOUT =================================*/
 #about {
   text-align: left;
-  background-color: var(--brand-beige);
+  background-color: #68752C;
 }
 
 #about header h2 {
   margin-bottom: 2.4rem;
+  color: #FFF9DE;
 }
 
+#about h4 {
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  font-weight: 700;
+  color: #FFF9DE;
+
+  margin-bottom: 1.6rem;
+
+  
+}
 #about .content p {
   margin-top: 2.4rem;
   margin-bottom: 6rem;
+  color: #FFF9DE;
 }
 
-/*=== CONTACT =================================*/
-#contact {
+/*=== vagas =================================*/
+#vagas {
+  background-color: #632739;
   text-align: left;
 }
 
-#contact header {
-  margin-bottom: 3.2rem;
+#vagas header h2 {
+  margin-bottom: 2.4rem;
+  color: #FFF9DE;
+  font-size: 3.2rem;
 }
 
-#contact ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
+#vagas h4 {
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  font-weight: 700;
+  color: #FFF9DE;
 
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
+
+  
+}
+#vagas .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
+  color: #FFF9DE;
+  font-size: 2rem;
 }
 
-#contact ul li {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
+
 
 /*=== FOOTER =================================*/
 footer {
-  background-color: var(--primary-color);
-  padding-block: 6rem;
+  background-color: #FFF9DE;
 
-  text-align: left;
+  padding-inline: 12rem;
 
-  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
+
+  overflow: hidden;
+
+  margin-top: -6rem;
+  margin-bottom: 6rem;
+
+  text-align: center;
+
+  color: #632739;
+
+  font-size: 1.8rem;
+  
+  font-weight: 400;
 }
 
-footer .logo {
-  display: inline-block;
-  margin-bottom: 2.4rem;
+footer h1 {
+  font-size: 4.8rem;
+  line-height: 100%;
+  font-weight: 600;
+  color: #632739;
+
+  margin-bottom: 1.6rem;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.6rem;
+  
+  padding-bottom: 1.6rem;
 }
 
-footer .logo svg {
-  width: 23.6rem;
-  height: 3.1rem;
-}
+footer h2 {
+  
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  font-weight: 700;
 
-footer .logo path {
-  fill: white;
+  margin-bottom: 1.6rem;
+  margin-top: -50px;
+  color: #632739;
+  margin-top: 0;
 }
-
 footer p {
-  color: var(--brand-beige);
   line-height: 2;
 
   margin-bottom: 3.2rem;
 }
 
-footer .social-links {
-  justify-content: flex-start;
+footer li {
+  list-style: none;
+  margin-bottom: 1.6rem;
+
+  display: flex;
+  align-items: center;
+
+  gap: 1.6rem;  
 }
 
 /* BACK TO TOP */
@@ -476,6 +581,8 @@ footer .social-links {
 }
 
 /*=== RESPONSIVO =================================*/
+
+
 @media (min-width: 1024px) {
   /*=== GERAL =================================*/
   body {
@@ -691,7 +798,7 @@ footer .social-links {
   }
 
   #services .card {
-    width: 30%;
+    width: 30rem;
     flex-grow: 1;
   }
 
@@ -710,15 +817,23 @@ footer .social-links {
     margin-bottom: 0;
   }
 
-  /*=== CONTACT =================================*/
+  /*=== vagas =================================*/
 
-  #contact .wrapper {
-    grid-template-columns: 1fr 57.5rem;
-    grid-template-areas: 'A B';
+  #vagas .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
   }
 
-  #contact h2 {
+  #vagas h2 {
     width: 40.4rem;
+  }
+  #vagas .col-a {
+    align-self: center;
+  }
+
+  #vagas .content p {
+    margin-bottom: 0;
   }
 
   /*=== FOOTER =================================*/
